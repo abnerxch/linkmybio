@@ -1,0 +1,47 @@
+# point to your own profile pic you want to display in your link.my.bio
+picture: "static/abner.jpg"
+
+# it will appear just below your picture.
+name: "Abner Xocop Chacach"
+# short auto biography about yourself
+shortbio: "Estudiante de Computer Science en la Universidad Francisco Marroquín"
+
+# 'links' will be an array of any amount of links you want your followers to discover, notice that the name will be mere descriptive (it is not necesarily functional.)
+# each link will have 3 attributes:
+# - enable: this will tell your app to display/hide this link in your "link.my.bio"
+# - link: this is the link you want to "redirect" your users to, when they click on the button
+# - description: this will appear as the text in the button of your link
+
+links:
+    - facebook:
+        enable: True
+        link: "https://www.facebook.com/abnerjoshike.xocop"
+        description: "Seamos amigos en facebook"
+    - instagram:
+        enable: True
+        link: "https://www.instagram.com/abnerxch/"
+        description: "Mira mis insta-stories"
+    - linkedin:
+        enable: True
+        link: "https://www.linkedin.com/in/abner-xocop-chacach/"
+        description: "Mi perfil profesional"
+    - spotify:
+        enable: True
+        link: "https://open.spotify.com/user/f9w1rfeyh8a6pkdj0gf2aziux?si=LJR5vJ3JT0uOohpFpaIEBg"
+        description: "Conoce mis gustos musicales"
+    - github:
+        enable: True
+        link: "https://github.com/abnerxch"
+        description: "También codifico"
+    - reddit:
+        enable: True
+        link: "https://www.reddit.com/user/jshk97"
+        description: "Reddit-me"
+    - blog-1:
+        enable: True
+        link: "https://cercadecristo.wordpress.com/"
+        description: "Conoce lo que escribo"
+    - blog-2:
+        enable: True
+        link: "https://focus.cathopic.com/autor/abner-xocop-chacach/"
+        description: "También escribo para Focus by Cathopic"
