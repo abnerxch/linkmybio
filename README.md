@@ -80,17 +80,35 @@ See you can add any style to your own project. These are only ideas.
 # Requirements
 
 - [x] **FORK** THIS REPO!
-- [ ] Your project will read the links.yaml file and generate the webpage to start serving it as desired.
-- [ ] Project MUST compile
-- [ ] Update README.md to add a section `Usage`, where you will place the commands in order to run your bio.py
-- [ ] Add Style, suggestions "bootstrap.css"
+- [x] Your project will read the links.yaml file and generate the webpage to start serving it as desired.
+- [x] Project MUST compile
+- [x] Update README.md to add a section `Usage`, where you will place the commands in order to run your bio.py
+- [x] Add Style, suggestions "bootstrap.css"
 - [ ] Deliver it via `git tags`
-- [ ] Make sure to use/develop/fill the empty files/folders provided: `static/`, `templates/`, `bio.py` , `requirements.txt`.
+- [x] Make sure to use/develop/fill the empty files/folders provided: `static/`, `templates/`, `bio.py` , `requirements.txt`.
 
 
 # Usage
 
-> put your code here
+First, you have to clone the repo:
+
+```shell
+git clone https://github.com/abnerxch/linkmybio.git
+```
+
+Then, install the requirements:
+
+```shell
+pip install -r requirements.txt
+```
+
+After that, execute the app:
+
+```shell
+python bio.py
+```
+
+You can see the app working in your favourite browser on [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 
 # Extras:

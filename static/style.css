@@ -5,6 +5,7 @@
     --accentColor: #E03A3E;
     --hoverColor: #963D96;
     --font: 'Karla', sans-serif;
+    --sbColor: #F0E608;
 }
 
 body{
@@ -35,8 +36,8 @@ body{
 }
 
 #shortBio{
-    color: #F0E608;
-    font-size: 1.0rem;
+    color: var(--bgColor);
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.25;
     display: block;

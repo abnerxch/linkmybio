@@ -18,19 +18,21 @@
     <div class="rainbowcat-left-bottom roll-in-left"></div>
 
 
-    <img id="userPhoto" src="../static/img/abner.jpg" alt="User Photo">
+    <img id="userPhoto" src="{{links.get('picture')}}" alt="{{links.get('name')}} Photo">
 
     <p id="userName">{{links.get("name")}}</p>
-    <p id="shortBio">{{links.get("shortbio")}}</p>
+
+    <div id="shortBio">
+        <p>{{links.get("shortbio")}}</p>
+    </div>
+
     <div id="links">
         {% for social in listSocialLinks %}
 
-        <a class="link" href="{{social.link}}" target="_blank">{{social.name}}</a>
+        <a class="link" href="{{social.link}}" target="_blank">😻 {{social.description}}  😻</a>
 
         {% endfor %}
 
-        <a class="link" href="https://pt.wikipedia.org/wiki/Homer_Simpson" target="_blank">😻 Wikipedia 😻</a>
-        <a class="link" href="https://foxplay.com/br/forme" target="_blank">😻 IMDB 😻</a>
     </div>
 
     <!-- Javascript -->
