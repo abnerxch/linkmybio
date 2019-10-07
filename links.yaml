@@ -17,39 +17,40 @@ links:
         name: Facebook
         enable: True
         link: "https://www.facebook.com/abnerjoshike.xocop"
-        description: "Seamos amigos en facebook"
+        description: "😻 Seamos amigos en facebook 😻"
+        until: "2019-12-30 20:30:00"
     - 2:
         name: Instagram
         enable: True
         link: "https://www.instagram.com/abnerxch/"
-        description: "Mira mis insta-stories"
+        description: "🌞 Mira mis insta-stories 🌞"
     - 3:
         name: Linkedin
         enable: True
         link: "https://www.linkedin.com/in/abner-xocop-chacach/"
-        description: "Mi perfil profesional"
+        description: "💯 Mi perfil profesional 💯"
     - 4:
         name: Spotify
         enable: True
         link: "https://open.spotify.com/user/f9w1rfeyh8a6pkdj0gf2aziux?si=LJR5vJ3JT0uOohpFpaIEBg"
-        description: "Conoce mis gustos musicales"
+        description: "🎶 Conoce mis gustos musicales 🎶"
     - 5:
         name: Github
         enable: True
         link: "https://github.com/abnerxch"
-        description: "También codifico"
+        description: "🤖 También codifico 🤖"
     - 6:
         name: Reddit
-        enable: True
+        enable: False
         link: "https://www.reddit.com/user/jshk97"
-        description: "Reddit-me"
+        description: "📸 Reddit-me 📸"
     - 7:
         name: Blog-1
         enable: True
         link: "https://cercadecristo.wordpress.com/"
-        description: "Conoce lo que escribo"
+        description: "🔥 Conoce lo que escribo 🔥"
     - 8:
         name: Blog-2
         enable: True
         link: "https://focus.cathopic.com/autor/abner-xocop-chacach/"
-        description: "También escribo para Focus by Cathopic"
+        description: "❣️ También escribo para Focus by Cathopic ❣️"

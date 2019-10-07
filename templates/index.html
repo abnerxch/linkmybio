@@ -28,9 +28,11 @@
 
     <div id="links">
         {% for social in listSocialLinks %}
+        {% if social.enable == True %}
 
-        <a class="link" href="{{social.link}}" target="_blank">😻 {{social.description}}  😻</a>
+        <a class="link" href="{{social.link}}" target="_blank"> {{social.description}}  </a>
 
+        {% endif %}
         {% endfor %}
 
     </div>
