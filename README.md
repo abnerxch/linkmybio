@@ -79,7 +79,7 @@ See you can add any style to your own project. These are only ideas.
 
 # Requirements
 
-- [ ] **FORK** THIS REPO!
+- [x] **FORK** THIS REPO!
 - [ ] Your project will read the links.yaml file and generate the webpage to start serving it as desired.
 - [ ] Project MUST compile
 - [ ] Update README.md to add a section `Usage`, where you will place the commands in order to run your bio.py
