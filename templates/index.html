@@ -29,9 +29,11 @@
     <div id="links">
         {% for social in listSocialLinks %}
         {% if social.enable == True %}
+        {% if social.until > dateNow %}
 
         <a class="link" href="{{social.link}}" target="_blank"> {{social.description}}  </a>
 
+        {% endif %}
         {% endif %}
         {% endfor %}
 

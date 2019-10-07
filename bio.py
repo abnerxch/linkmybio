@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, request
-import yaml, optparse
+import yaml
 import os
+import datetime
 
 developer = os.getenv("DEVELOPER", "User")
 environment = os.getenv("ENVIRONMENT", "development")
@@ -8,12 +9,13 @@ environment = os.getenv("ENVIRONMENT", "development")
 app = Flask(__name__)
 
 class SocialMedia():
-    def __init__(self, name, enable, link, description, picture):
+    def __init__(self, name, enable, link, description, picture, until):
         self.name = name
         self.enable = enable
         self.link = link
         self.description = description
         self.picture = picture
+        self.until = until
 
 listSocialLinks = []
 with open("links.yaml", 'r') as stream:
@@ -29,13 +31,17 @@ for i in range(len(linkList)):
     enable = linkList[i].get(i+1).get("enable")
     link = linkList[i].get(i+1).get("link")
     description = linkList[i].get(i+1).get("description")
+    until = linkList[i].get(i+1).get("until")
 
-    social_media = SocialMedia(name, enable, link, description, picture)
+    social_media = SocialMedia(name, enable, link, description, picture, until)
     listSocialLinks.append(social_media)
 
 @app.route('/')
 def index():
-    return render_template("index.html", listSocialLinks=listSocialLinks, links=links)
+    dateToday = datetime.datetime.now()
+
+    dateNow = str(dateToday)
+    return render_template("index.html", listSocialLinks=listSocialLinks, links=links, dateNow = dateNow)
 
 if __name__ == '__main__':
   app.run(debug=True)
