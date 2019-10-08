@@ -105,7 +105,7 @@ pip install -r requirements.txt
 After that, execute the app:
 
 ```shell
-python bio.py
+python app.py
 ```
 
 You can see the app working in your favourite browser on [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
